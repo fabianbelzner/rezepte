@@ -1,0 +1,167 @@
+\documentclass[a4paper, oneside]{recipe}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{bookman}
+\usepackage{nicefrac}
+\usepackage{hyperref}
+\usepackage{ccicons}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={No-Knead-Bread},
+    pdfpagemode=FullScreen,
+}
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Zutaten}:\ }
+\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\makeatletter
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother
+\setlength\parindent{0pt}
+\setlength\parskip{2ex plus 0.5ex}
+\captionsetup[figure]{labelformat=default}
+
+\begin{document}
+
+\recipe{No Knead Bread}
+\ingred{800 g Weizenmehl (Typ 1050), 200 g Roggenmehl (Typ 1150), 1 g Trockenhefe, 24 g Salz, 750 ml Wasser, optional: 40 g Sauerteig}
+
+\section*{Vorwort}
+Das ist ein Rezept für ein Brot ohne Kneten, inspiriert vom \textit{No Knead Bread} von der Sullivan Street Bakery in New York\footnote{\url{https://thebrookcook.wordpress.com/2016/03/04/no-knead-bread-from-sullivan-street-bakery/}}. Für dieses Brot wird keine Küchenmaschine benötigt. Aus Gründen der Energieeffizienz backe ich immer zwei Brote gleichzeitig. Für ein Brot alle Mengen halbieren. Die Backzeit bleibt gleich.
+
+Umgesetzt von Fabian Belzner.\\
+Stand: 30. November 2025
+
+\section*{Zubereitung}
+\subsection*{Zutaten mischen}
+Weizenmehl, Roggenmehl, Salz, Hefe (Abbildung \ref{fig:hefe_wiegen}) und Wasser (und einen großen Löffel Sauerteig, etwa 40 g) in einer Schüssel vermischen und so lange umrühren, bis das gesamte Mehl feucht ist und kein trockenes Mehl mehr zu erkennen ist (Abbildung \ref{fig:durchmischter_teig}). Im Sommer bei hoher Raumtemperatur und Luftfeuchte kann es Sinn machen, nur 0,5 g Hefe zu verwenden. Das bekommt man mit der Zeit raus. Zum Durchmischen reicht ein Kochlöffel oder eine Gabel. Die besten Erfahrungen habe ich mit einem dänischen Schneebesen gemacht.
+
+\begin{figure}[htbp]
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[angle=-90,width=\textwidth]{nokneatbread_figures/hefe_wiegen.jpeg}
+    \caption{Hefe abwiegen}
+    \label{fig:hefe_wiegen}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[angle=-90,width=\textwidth]{nokneatbread_figures/teig_nach_mischen.jpeg}
+    \caption{Durchmischter Teig}
+    \label{fig:durchmischter_teig}
+\end{minipage}
+\end{figure}
+
+Den Teig abdecken, damit er nicht austrocknet und 12 Stunden bei Raumtemperatur stehen lassen. Alternativ 24 h bei Kühlschranktemperatur und anschließend 2 h bei Raumtemperatur. Diese Zeiten hängen stark vom Umgebungsklima ab und müssen keinesfalls auf die Stunde genau eingehalten werden. In dieser Zeit hat die Hefe Zeit, zu arbeiten, und das Mehl Zeit, die Feuchtigkeit aufzunehmen. Währenddessen bildet sich ein Glutengerüst, das den Teig stabil und elastisch werden lässt. Der Teig dehnt sich aus, also darf er nicht zu dicht verschlossen werden. Gleichzeitig soll er aber nicht austrocknen. Was gut funktioniert, ist, die Schüssel mit dem Teig in eine Mülltüte zu stellen (Abbildung \ref{fig:abgedeckter_teig}).
+
+Ab einem bestimmten Zeitpunkt baut sich das Glutengerüst wieder ab und der Teig verliert seine Stabilität und wird flüssiger. Sauerteig beschleunigt diesen Prozess. Idealerweise würde man den Punkt abpassen, zu dem der Teig die maximale Stabilität hat. Wann das genau ist, hängt vom Mehl, der Hydratation, dem Hefe- und Sauerteigehalt sowie dem Klima ab und ist unmöglich vorherzusagen oder zu reproduzieren. Je länger der Teig fermentiert, desto aromatischer und feuchter wird später die Krume, aber gleichzeitig wird er schwerer zu verarbeiten. Typischerweise hat man im Winter (Heizperiode, geringe Luftfeuchte) kontrollierbarere Bedingungen zum Backen.
+
+\begin{figure}[htbp]
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[angle=-90,width=\textwidth]{nokneatbread_figures/teig_abgedeckt.jpeg}
+    \caption{Abgedeckter Teig}
+    \label{fig:abgedeckter_teig}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{nokneatbread_figures/teig_nach_gehen.jpeg}
+    \caption{Fermentierter Teig}
+    \label{fig:fermentierter_teig}
+\end{minipage}
+\end{figure}
+
+\subsection*{Stretch and Fold}
+Dieser Teig wird nicht geknetet und könnte einfach so in einen Topf gekippt und gebacken werden. Wir streben aber ein \textit{freistehendes} Brot an. Um dafür Spannung in den Teig zu bekommen, muss der Teig idealerweise in den letzten vier Stunden vor dem Backen alle zwei Stunden \textit{gedehnt und gefaltet} werden. Das ist verbal schwer zu erklären, daher empfiehlt sich etwas YouTube-Lektüre (Suchbegriff: \textit{Stretch and Fold}). Typischerweise dehne und falte ich den Teig einmal, wenn ich den Backofen einschalte, und die beiden Teigteile einmal, bevor ich backe.
+
+\subsection*{Backofen vorheizen}
+Jetzt müssen der Backofen und die beiden Töpfe vorgeheizt werden. Dazu beide Töpfe auf ein Blech in den Ofen stellen. Die Deckel dazu, aber nicht drauf, damit die Töpfe auch von innen vorheizen. Den Backofen auf 250 Grad Umluft einstellen und \textit{mindestens} 30 Minuten vorheizen.
+
+\subsection*{Brot formen}
+Wenn der Backofen vorgeheizt ist, den Teig (Abbildung \ref{fig:fermentierter_teig}) auf die Küchenarbeitsplatte stürzen und in zwei Teile teilen. Hierfür eignet sich eine Teigkarte. Beide Teile noch einmal dehnen und falten und ein rundes Brot formen (Abbildung \ref{fig:teig_vor_backen}). Der Teig ist unter Umständen sehr klebrig. Ich verwende nie Mehl auf der Arbeitsplatte und in der Regel kein bis kaum Wasser. Der Umgang mit einem klebrigen Teig erfordert allerdings etwas Übung. Ich empfehle \textit{go for a walk with your dough}\footnote{\url{https://www.youtube.com/watch?v=2s0hk6_4x4w}} nach Richard Bertinet.
+
+\begin{figure}[htbp]
+    \includegraphics[angle=0,width=\textwidth]{nokneatbread_figures/teiglinge_vor_backen.jpeg}
+    \caption{Zwei Teiglinge vor dem Backen}
+    \label{fig:teig_vor_backen}
+\end{figure}
+
+\subsection*{Backen}
+Theoretisch kann man die Brote ohne Backpapier oder Mehl in die Töpfe geben, ohne dass sie am Boden festkleben. Falls sie aber doch festkleben sollten, bekommt man sie nahezu unmöglich zerstörungsfrei wieder heraus. Daher gebe ich immer etwas Mehl auf den Topfboden. Achtung, das Mehl verbrennt im vorgeheizten Topf sofort. Jetzt in jeden Topf je einen Teigling gleiten lassen, den Deckel schließen und für 30 Minuten bei 250 Grad Umluft backen. Anschließend die Deckel entfernen (Achtung heiß!) und die Brote weitere 30 Minuten bei 160 Grad Ober-Unterhitze fertig backen.
+
+\begin{figure}[htbp]
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[angle=-90,width=\textwidth]{nokneatbread_figures/teig_in_topf.jpeg}
+    \caption{Teigling im Topf}
+    \label{fig:teig_in_topf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[angle=-90,width=\textwidth]{nokneatbread_figures/toepfe_im_backofen.jpeg}
+    \caption{Töpfe im Ofen}
+    \label{fig:toepfe_im_ofen}
+\end{minipage}
+\end{figure}
+
+Die Brote sollten sich jetzt problemlos aus dem Topf lösen lassen. Die Kruste sollte knusprig sein. Wenn man auf den Boden klopft, dann sollte das hohl klingen.
+
+Das Brot jetzt auf einem Gitter abkühlen lassen.
+
+\begin{figure}[htbp]
+    \includegraphics[angle=0,width=\textwidth]{nokneatbread_figures/brot_fertig_im_topf.jpeg}
+    \caption{Fertiges Brot im Topf}
+    \label{fig:fertiges_brot_im_topf}
+\end{figure}
+
+\section*{Weitere Gedanken}
+
+\subsection*{Sauerteig}
+Die Zugabe von Sauerteig sorgt dafür, dass das Mehl versäuert wird. Das führt zu einer saftigeren Krume, einer längeren Haltbarkeit und einem je nach Fermentationstemperatur sowie Sauerteigart und -menge mehr oder weniger ausgeprägten säuerlichen Geschmack. Das Experimentieren mit Sauerteig lohnt sich und ist deutlich einfacher, als es auf den ersten Blick scheint. Einen Sauerteigansatz bekommt man bei den meisten Bäckereien. Das selbstständige Ansetzen von Sauerteig gelingt auch in den meisten Fällen. Auch hier gilt: Es handelt sich um ein Naturprodukt, und das Verhalten des Sauerteigs hängt u. A. von den Umgebungsbedingungen ab. Die Anleitungen, die man so im Internet findet, kann man daher gerne eher als Anhaltspunkt sehen. Die dort angegebenen Zeiten (und möglicherweise Temperaturen) müssen nicht exakt eingehalten werden.
+
+Wenn man es richtig machen würde, dann versäuert man zunächst den gesamten Roggenanteil und mischt das dann erst mit dem Weizenmehl. Damit bekommt man saftige Brote, bei denen sich die Intensität des Säuregeschmacks durch die Fermentationstemperatur des Sauerteigs variieren lässt. Das Ganze bekommt man (zumindest ich) nur noch durch Kneten mit einer Teigmaschine und anschließende kalte Fermentation im Kühlschrank stabil. Eine kalte Fermentation führt allerdings zu einem besonders ausgeprägten sauren Geschmack im Brot, was nicht jeder mag. Eventuell würde es helfen, nur einen Teil des Roggenmehls zu versäuern.
+
+\subsection*{Teigbearbeitung}
+Durch den Roggenanteil wird der Teig schnell klebrig. Das ist der Punkt, an dem Großbäckereien Zusatzstoffe einsetzen, um den Teig maschinenverarbeitbar zu halten. Die händische Verarbeitung erfordert etwas Übung. Nasse Finger helfen, damit nicht so viel kleben bleibt. Auf eine nasse oder bemehlte Arbeitsplatte würde ich verzichten. Zu viel Mehl verändert die Hydration des Teigs. Zu viel Wasser auf der Arbeitsplatte führt dazu, dass der Teig dort zu stark gleitet. Gewisse Hafteffekte können auf der Arbeitsplatte auch gewollt sein (siehe Richard Bertinet), und die Verarbeitung letztendlich erleichtern.
+
+\subsection*{Stretch and Fold}
+Das bringt die Spannung in den Teig, die man ansonsten mit einer Knetmaschine erzeugen würde. Auch das erfordert etwas Übung. Ich mache das mittlerweile in der Schüssel, d. h. ich ziehe in der Schüssel die Seiten des Teigs nach oben und lege (klebe) sie unter Spannung wieder oben auf. Mit der Zeit stellt man fest, dass der Teig nach jedem Stretch and Fold noch mehr aufgeht.
+
+\subsection*{Hydratation}
+Die Wassermenge im Teig beeinflusst stark die Fermentation und wie saftig die Krume später ist. Rein geschmacklich ist mehr Wasser zu bevorzugen. Es funktionieren auch Teige mit 100 \% Wassergehalt (genauso viel Wasser wie Mehl). Der Teig wird dadurch allerdings flüssiger, klebriger und immer schwerer zu verarbeiten. Um ein frei stehendes Brot zu backen, liegt die Obergrenze meiner Erfahrung nach bei 80 \% Hydratation.
+
+\subsection*{Problem: Teig ist zu flüssig oder hat keine Stabilität}
+Es passiert immer mal wieder, dass Teige sehr flüssig sind oder nahezu keine Stabilität haben. Rein geschmacklich ist das kein Problem, das Brot wird genauso gut schmecken. Falls Sauerteig verwendet wurde, dann schmecken diese Brote oft etwas saurer, was ein Zeichen dafür ist, dass die Sauerteigfermentation funktioniert hat, jedoch auch das Glutengerüst abgebaut wurde. In diesem Fall den Teig einfach direkt in den vorgeheizten Topf stürzen und backen. Manchmal hilft es, den Teig einige Stunden zu kühlen. Dadurch gewinnt er wieder mehr Stabilität.
+
+\subsection*{Low Level Variante}
+Die Teigspannung hat eigentlich kaum Einfluss auf die Fermentation. Lediglich Stretch and Fold hilft, dass immer wieder neue Teigteile in Verbindung kommen, was die Fermentation anregt. Die Teigspannung wird nur gebraucht, um ein frei stehendes Brot zu erhalten, das optisch schöner aussieht. Geschmacklich ist es äquivalent, wenn der fermentierte Teig einfach in den heißen Topf gestürzt und gebacken wird. Das Brot sieht dann weniger schön aus, schmeckt aber genauso. Diese Teige haben kaum Spannung und werden sich im Topf auch seitlich ausdehnen, was zu einem flacheren Brot führt. Lösung: Topf mit weniger Durchmesser benutzen.
+
+\subsection*{Welcher Topf überhaupt?}
+Das Brot wird aus zwei Gründen im Topf gebacken: Erstens verliert der Backofen beim Öffnen sofort seine Temperatur. Das Brot braucht aber gerade am Anfang eine hohe Temperatur, die in Haushaltsbacköfen sowieso schon schwer zu erreichen ist. Der Topf speichert die Hitze und gibt sie ans Brot ab. Zweitens sorgt der Deckel dafür, dass die Feuchtigkeit nicht entweicht und das Brot eine knusprige Kruste bekommt. Das könnte man auch mit einem Backofen mit Dampfschwadefunktion erreichen. Oder man spritzt Wasser in den heißen Ofen, stellt eine Schale Wasser dazu oder bespritzt heiße Schrauben im Ofen, sodass das Wasser sofort verdampft. Habe ich alles schon versucht, ein Topf ist da unschlagbar und deutlich unkomplizierter.
+
+Wenn man den Backinfluencern auf Instagram glaubt, dann kann nur der Le Creuset Signature Bräter (etwa 150 €) zum Backen funktionieren. Das ist Quatsch. Jeder Topf, dessen Wände die Wärme speichern, funktioniert gut. Ich habe einen Gusstopf von Zwilling und einen von Lidl. Tongefäße sollen auch sehr gut funktionieren. Normale Metalltöpfe gehen auch, aber dort ist die Wärmespeicherfähigkeit und die Hitzverteilung nicht so gut.
+
+\subsection*{Problem: Mein Brot sieht nicht aus wie im Internet!}
+Im Internet, besonders bei Instagram, sieht man immer wieder tolle Brote, deren Kruste nicht gerissen ist und in deren Kruste mit einem Brotmesser kunstvolle Verzierungen eingeritzt wurden. Dieses Rezept ist für Brote, die wenig Arbeit machen und gut schmecken. Falls es doch einmal so wie im Internet aussehen soll, dann lasst das Roggenmehl weg. Der Teig wird dann deutlich elastischer, klebt nicht mehr und ist besser zu verarbeiten. Leider schmeckt das Brot dann auch nicht. Oder probiert so lange aus, bis ihr den Punkt findet, an dem der Sauerteig zwar gearbeitet hat, die Glutenstruktur aber maximal ausgeprägt ist. Viel Spaß!
+
+\subsection*{Literatur}
+Wer wissen will, was technisch-biologisch hinter alledem steckt und wie das mit der (Sauerteig-)Fermentation wirklich funktioniert, dem empfehle ich das Buch von Hendrik von theBread.code()\footnote{\url{https://www.the-bread-code.io/}}. Sein Buch kann man auf der Website kostenlos herunterladen.
+
+Tolle Rezepte im Stil dieses Brotes findet man bei Jim Lahey\footnote{\url{https://amzn.eu/d/bpMp8kv}} von der Sullivan Street Bakery. Ich bin mir nicht sicher, ob er diese Art des Backens erfunden hat, aber nach einem Interview mit der New York Times gehen die meisten derartigen Rezeptideen auf ihn zurück.
+
+\section*{Lizenz}
+\ccbysa{} Creative-Commons-Lizenz\footnote{Um eine Kopie dieser Lizenz zu sehen, besuchen Sie \url{http://creativecommons.org/licenses/by-sa/4.0/}.}.
+
+Dieser Text steht unter der Creative-Commons-Lizenz (\ccLogo) Namensnennung (\ccAttribution) – Weitergabe unter gleichen Bedingungen (\ccShareAlike) 4.0 International.
+
+\end{document}
